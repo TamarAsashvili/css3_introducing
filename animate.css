@@ -12,7 +12,7 @@
 
 .container1 {
     width: 300px;
-    background:pink;
+    background:rgb(169, 226, 236);
     height: 200px;
     margin: auto;
     text-align: center;
@@ -21,4 +21,23 @@
 
 .container1:hover{
   transform: scale(1.2);
+  background:rgb(211, 163, 226);
+}
+
+
+
+.container2 {
+   width: 300px;
+  background:rgb(82, 236, 185);
+  height: 200px;
+    margin: auto;
+    text-align: center;
+     transition: transform 2s ease-out;
+}
+
+
+
+.trigger:hover .container2{
+  transform: translate(500px, 0px);
+  background:rgb(211, 163, 226);
 }
