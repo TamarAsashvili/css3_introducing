@@ -1,0 +1,86 @@
+/*columns*/
+.content{
+    columns: 1;
+    column-rule: 1px solid chocolate;
+}
+
+/*@media*/
+
+@media screen and (min-width: 500px){
+    .content{
+    columns: 2;
+    column-rule: 1px solid chocolate;
+}
+}
+
+@media screen and (min-width: 800px){
+    .content{
+    columns: 3;
+    column-rule: 1px solid chocolate;
+}
+}
+
+
+/*rounded corner*/
+/*box shadow property*/
+
+.main{
+    background: rgb(97, 97, 185);
+    height: 500px;
+    width: 500px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 1px black;
+    text-shadow:10px 10px 10px black ;
+}
+
+/*gradient bg*/
+
+.main1{
+    height: 500px;
+    width: 500px;
+    background: linear-gradient(45deg, rgb(6, 10, 70), rgb(77, 0, 87), indigo);
+}
+
+
+/*gradient radial*/
+
+.main2{
+    height: 500px;
+    width: 500px;
+    background: repeating-radial-gradient(blue 10%, indigo 28%);
+}
+
+
+/*gradient radial img multiple backgrounds*/
+
+.main3{
+    height: 500px;
+    width: 500px;
+    background:url('https://i.picsum.photos/id/63/100/100.jpg') center no-repeat, repeating-radial-gradient(rgb(211, 209, 121) 10%, rgb(173, 79, 100) 28%);
+}
+
+/*calculate value in css*/
+
+.main4{
+    height: 500px;
+    width:calc(100% - 300px);
+    background:url('https://i.picsum.photos/id/3/100/100.jpg') center no-repeat, repeating-radial-gradient(blue 10%, indigo 28%);
+}
+
+/*generated content counter for p or ...*/
+.text{
+    counter-reset: c;
+}
+
+.text p:before{
+    counter-increment: c;
+content:"Tamar  #:"  counter(c) ':';
+color: rgb(4, 58, 2);
+}
+
+.text p:after{
+content:"***************** END";
+color:red;
+}
+
+
