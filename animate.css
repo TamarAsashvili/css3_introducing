@@ -1,3 +1,5 @@
+/*Animation*/
+
 .container {
     width: 300px;
     background:pink;
@@ -24,20 +26,44 @@
   background:rgb(211, 163, 226);
 }
 
-
-
 .container2 {
    width: 300px;
   background:rgb(82, 236, 185);
   height: 200px;
     margin: auto;
     text-align: center;
-     transition: transform 2s ease-out;
+     transition: all 2s ease-out;
 }
-
-
 
 .trigger:hover .container2{
   transform: translate(500px, 0px);
   background:rgb(211, 163, 226);
 }
+
+/*Transition*/
+
+.container3{
+  height: 200px;
+  width: 300px;
+  margin: auto;
+  background: gold;
+  animation: frames 5s ease 3s alternate infinite ;
+}
+
+@keyframes frames{
+  from{
+    width: 400px;
+    transform: translate(8px, 8px)
+  }
+  to{
+    transform: translate(20px, 20px)
+  }
+}
+
+
+
+
+
+
+
+
