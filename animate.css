@@ -1,3 +1,14 @@
+/*Logo*/
+
+
+/*paragrafs for style*/
+p:first-letter{
+color :salmon;
+font-size: 300%;
+float: left;
+}
+
+
 /*Animation*/
 
 .container {
@@ -60,6 +71,8 @@
   }
 }
 
+
+/*numbers*/
 .item{
   background: salmon;
   padding: 10px;
