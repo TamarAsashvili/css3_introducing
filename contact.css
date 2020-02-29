@@ -28,43 +28,67 @@ li a:hover {
 
 /*1*/
 div{
-    width: 300px;
-    height: 100px;
-    margin: 150px;
-    background: rgb(238, 121, 105);
-    border: solid 1px black;
-    transform: translate(-100px, -100px);
-   
+  width: 300px;
+  height: 100px;
+  margin: 150px;
+  background: rgb(238, 121, 105);
+  border: solid 1px black;
+  transform: translate(-100px, -100px);
 }
 
 /*2*/
 
 
 .cont2{
-    width: 300px;
-    height: 100px;
-    background: rgb(221, 224, 8);
-    border: solid 1px rgb(21, 116, 122);
- 
-   }
+  width: 300px;
+  height: 100px;
+  background: rgb(221, 224, 8);
+  border: solid 1px rgb(21, 116, 122);
+}
 
 /*in mobile you dont have hover and you use focus sudo selectors*/
 .cont2:hover, div:focus{
-   background: rgb(8, 224, 206);
-   transform: translate(100px, 100px);
-   animation: infinite 2s ease-in-out;
-
+  background: rgb(8, 224, 206);
+  transform: translate(100px, 100px);
+  animation: infinite 2s ease-in-out;
 }
 
 /*3  rotate works klockwise direction(+) anti(-) */
 
 
 .cont3{
-    width: 300px;
-    height: 100px;
-    background: rgb(150, 155, 236);
-    border: solid 1px rgb(21, 116, 122);
-    transform: rotateY(180deg);
-   }
+  width: 300px;
+  height: 100px;
+  background: rgb(150, 155, 236);
+  border: solid 1px rgb(21, 116, 122);
+  transform: rotateY(180deg);
+}
 
 
+
+/*4  make half (0.5) it scaled up olso text if you make (0) it will disappeared */
+/*you can write X and Y thogether---- scale(0.5)*/
+
+.cont4{
+  width: 300px;
+  height: 100px;
+  background: rgb(33, 223, 134);
+  transform: scaleX(0.5);
+}
+
+.cont5{
+  width: 300px;
+  height: 100px;
+  background: rgb(33, 223, 134);
+  transform: scaleY(0.5);
+}
+
+
+/*SKEW X and Y  skew(25deg, 0deg)*/
+
+.cont7{
+  width: 300px;
+  height: 100px;
+  background: rgb(177, 246, 243);
+transform: skew(-5deg, 35deg);
+}
