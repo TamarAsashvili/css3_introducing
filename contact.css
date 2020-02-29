@@ -24,9 +24,47 @@ li a:hover {
 }
 
 
+/*translate*/
+
+/*1*/
 div{
     width: 300px;
     height: 100px;
-    background: yellow;
+    margin: 150px;
+    background: rgb(238, 121, 105);
     border: solid 1px black;
+    transform: translate(-100px, -100px);
+   
 }
+
+/*2*/
+
+
+.cont2{
+    width: 300px;
+    height: 100px;
+    background: rgb(221, 224, 8);
+    border: solid 1px rgb(21, 116, 122);
+ 
+   }
+
+/*in mobile you dont have hover and you use focus sudo selectors*/
+.cont2:hover, div:focus{
+   background: rgb(8, 224, 206);
+   transform: translate(100px, 100px);
+   animation: infinite 2s ease-in-out;
+
+}
+
+/*3  rotate works klockwise direction(+) anti(-) */
+
+
+.cont3{
+    width: 300px;
+    height: 100px;
+    background: rgb(150, 155, 236);
+    border: solid 1px rgb(21, 116, 122);
+    transform: rotateY(180deg);
+   }
+
+
