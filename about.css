@@ -30,7 +30,7 @@ button{
     width: 150px;
     height: 50px;
     font-size: 31px;
-    background-color: rgb(233, 232, 178);
+    background-color: rgb(235, 108, 4);
     margin: 200px;
     transition: background-color 2s, width 2s, heigth 2s, font-size 3s, cursor 2s, border 3s, color 2s ;
 }
@@ -39,7 +39,7 @@ button{
 
 button:hover, button:focus {
    background-color: #04455a;
-   color: blanchedalmond;
+   color: rgb(250, 250, 250);
    width: 300px;
    height: 75px;
    font-size: 50px;
@@ -47,4 +47,28 @@ button:hover, button:focus {
    border: 2px solid black;
 }
 
+
+/*transformation transition, like animation*/
+
+#btn-1{
+    width: 150px;
+    height: 50px;
+    font-size: 31px;
+    background-color: rgb(238, 234, 12);
+    margin: 200px;
+    transition: background-color 2s, width 2s, heigth 2s, transform 3s, font-size 3s, cursor 2s, border 3s, color 2s ;
+}
+
+/*focus for mobile aplication*/
+
+#btn-1:hover, #btn-1:focus {
+   background-color: #e917a3;
+   color: rgb(250, 250, 250);
+   width: 300px;
+   height: 75px;
+   font-size: 50px;
+   cursor: pointer;
+   border: 2px solid black;
+   transform: rotate(360deg) translate(100px);
+}
 
