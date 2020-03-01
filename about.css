@@ -90,27 +90,45 @@ button:hover, button:focus {
 
 
 #btn-2{
-  transition: width 2s;
+  transition: width 5s;
   transition-timing-function: ease;
 }
 
 
 #btn-3{
-  transition: width 2s;
+  transition: width 5s;
   transition-timing-function: ease-in;
 }
 
 #btn-4{
-  transition: width 2s;
+  transition: width 5s;
   transition-timing-function: ease-in-out;
 }
 
 #btn-5{
-  transition: width 2s;
-  transition-timing-function: step-end;
+  transition: width 5s;
+  transition-timing-function: linear;
 }
 
 
 #btn-2:hover, #btn-3:hover, #btn-4:hover, #btn-5:hover{
   width: 350px;
+}
+
+/*transition shorthand to write*/
+
+#btn-7{
+    width: 200px;
+    height: 50px;
+    font-size: 31px;
+    border-radius: 10px;
+    background-color: rgb(160, 0, 209);
+    /*here goes numebrs transition: property duration timing-function delay   */
+    transition: width 2s linear 1s, height 2s;
+
+}
+
+#btn-7:hover{
+  width: 350px;
+  height: 75px;
 }
