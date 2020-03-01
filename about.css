@@ -27,28 +27,30 @@ li a:hover {
 /*transition*/
 
 button{
-    width: 150px;
-    height: 50px;
-    font-size: 31px;
-    background-color: rgb(235, 108, 4);
-    margin: 200px;
-    transition: background-color 2s, width 2s, heigth 2s, font-size 3s, cursor 2s, border 3s, color 2s ;
+  width: 150px;
+  height: 50px;
+  font-size: 31px;
+  background-color: rgb(235, 108, 4);
+  margin: 200px;
+  transition: background-color 2s, width 2s, heigth 2s, font-size 3s, cursor 2s, border 3s, color 2s ;
+
 }
 
 /*focus for mobile aplication*/
 
 button:hover, button:focus {
-   background-color: #04455a;
-   color: rgb(250, 250, 250);
-   width: 300px;
-   height: 75px;
-   font-size: 50px;
-   cursor: pointer;
-   border: 2px solid black;
+  background-color: #04455a;
+  color: rgb(250, 250, 250);
+  width: 300px;
+  height: 75px;
+  font-size: 50px;
+  cursor: pointer;
+  border: 2px solid black;
 }
 
 
-/*transformation transition, like animation*/
+/*transformation transition, delay -- speed curve*/
+
 
 #btn-1{
     width: 150px;
@@ -56,19 +58,59 @@ button:hover, button:focus {
     font-size: 31px;
     background-color: rgb(238, 234, 12);
     margin: 200px;
-    transition: background-color 2s, width 2s, heigth 2s, transform 3s, font-size 3s, cursor 2s, border 3s, color 2s ;
+    transition: background-color 2s;
+    transition-delay: 2s;
+    transition-timing-function: ease;
 }
+
 
 /*focus for mobile aplication*/
 
 #btn-1:hover, #btn-1:focus {
    background-color: #e917a3;
-   color: rgb(250, 250, 250);
-   width: 300px;
-   height: 75px;
-   font-size: 50px;
-   cursor: pointer;
-   border: 2px solid black;
-   transform: rotate(360deg) translate(100px);
+   
 }
 
+
+/*ease - slow start. then fast, slow end(default)
+  ease-in slow start, then faster
+  ease-uit slow end,
+  ease-in-out slow start and slow end middel normal speed
+*/
+
+
+#btn-2, #btn-3, #btn-4, #btn-5{
+    width: 200px;
+    height: 50px;
+    font-size: 31px;
+    background-color: rgb(12, 166, 238);
+    cursor: pointer;
+    margin: 0;
+}
+
+
+#btn-2{
+  transition: width 2s;
+  transition-timing-function: ease;
+}
+
+
+#btn-3{
+  transition: width 2s;
+  transition-timing-function: ease-in;
+}
+
+#btn-4{
+  transition: width 2s;
+  transition-timing-function: ease-in-out;
+}
+
+#btn-5{
+  transition: width 2s;
+  transition-timing-function: step-end;
+}
+
+
+#btn-2:hover, #btn-3:hover, #btn-4:hover, #btn-5:hover{
+  width: 350px;
+}
