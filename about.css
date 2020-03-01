@@ -118,9 +118,9 @@ button:hover, button:focus {
 /*transition shorthand to write*/
 
 #btn-7{
-    width: 200px;
+    width: 150px;
     height: 50px;
-    font-size: 31px;
+    font-size: 21px;
     border-radius: 10px;
     background-color: rgb(160, 0, 209);
     /*here goes numebrs transition: property duration timing-function delay   */
@@ -128,7 +128,57 @@ button:hover, button:focus {
 
 }
 
-#btn-7:hover{
-  width: 350px;
+#btn-7:hover, #btn-7:focus{
+  width: 250px;
   height: 75px;
+}
+
+
+/*keyframes? styles at each point, you can speacify every style*/
+/*how to create keaframes?*/
+
+#box-8{
+  width: 300px;
+  height: 150px;
+  background: yellow;
+  border: #e917a3 1px solid;
+  animation-name: bgChange;
+  animation-duration:5s ;
+}
+
+
+@keyframes bgChange {
+  from{
+    background-color: yellow;
+  }
+  to{
+    background-color: rgb(68, 104, 14);
+  }
+}
+
+
+/*use % it is same result*/
+#box-9{
+  width: 300px;
+  height: 150px;
+  background: yellow;
+  border: #e917a3 1px solid;
+  animation-name: bgChange2;
+  animation-duration:15s ;
+}
+
+
+@keyframes bgChange2 {
+  10%{
+    background-color: rgb(191, 194, 224);
+  }
+  50%{
+    background-color: #e917a3;
+  }
+  85%{
+    background: rgb(0, 17, 255);
+  }
+  100%{
+    background-color: rgb(68, 104, 14);
+  }
 }
