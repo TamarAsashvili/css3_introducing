@@ -12,7 +12,7 @@
 :sheep:
 
 
-:hibiscus::hibiscus::hibiscus::hibiscus::hibiscus:
+:hibiscus::hibiscus::hibiscus:
 :hibiscus::dolphin::dolphin::dolphin::hibiscus:
 
 
